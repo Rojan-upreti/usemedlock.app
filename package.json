@@ -1,0 +1,10 @@
+{
+  "name": "create-now-loader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scroll-driven pixel loading animation",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  }
+}

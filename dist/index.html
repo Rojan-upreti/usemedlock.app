@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Meet Medlock, your connected care companion." />
+    <title>Medlock — Connected Care</title>
+    <link rel="icon" type="image/png" href="./medlock.png" />
+    <link rel="apple-touch-icon" href="./medlock.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./contributions.css" />
+    <link rel="stylesheet" href="./integrations.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-hidden="true" inert>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="Medlock home">
+          <img class="brand-mascot" src="./medlock.png" alt="" />
+          <span>Medlock</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+          <span class="menu-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+        <div class="nav-menu" id="primary-menu">
+          <a href="/" aria-current="page">Home</a>
+          <a href="/about/">About</a>
+          <a href="/our-solution/">Our Solution</a>
+          <a href="/team/">Team</a>
+          <a class="nav-cta" href="mailto:hello@usemedlock.com">Get Connected</a>
+        </div>
+      </nav>
+    </header>
+    <main class="loader" id="home">
+      <section class="track">
+        <div class="stage" id="stage">
+          <div class="grid"></div>
+          <canvas id="pixels" aria-hidden="true"></canvas>
+          <canvas id="overlay" aria-hidden="true"></canvas>
+          <aside class="cue" id="cue">Explore Medlock<span></span></aside>
+          <section class="message" aria-label="Meet Medlock. Your compliance, connected.">
+            <h1 id="headline"><span>Meet </span><strong>Medlock<i></i><i></i><i></i><i></i></strong><span>.</span><br /><span>Your compliance, </span><strong>connected<i></i><i></i><i></i><i></i></strong><span>.</span></h1>
+            <div class="contrib" id="about" aria-label="Our work and contributions: AgentTrust, acquired by Anthropic; Microsoft AI Governance Kit; NVIDIA and Dell Hackathon">
+              <p>Our work &amp; contributions</p>
+              <div class="contrib-list">
+                <span><b>AgentTrust</b><small>Acquired by Anthropic</small></span>
+                <span><b>Microsoft</b><small>AI Governance Kit</small></span>
+                <span><b>NVIDIA × Dell</b><small>Hackathon</small></span>
+              </div>
+            </div>
+          </section>
+          <section class="integrations" id="solution" aria-label="Medlock integrations">
+            <p>Connects with the systems your teams already trust</p>
+            <div class="marquee-window">
+              <div class="marquee-track">
+                <div class="brand-set">
+                  <span><img src="./logos/servicenow.png" data-domain="servicenow.com" alt="" /><b>ServiceNow</b></span>
+                  <span><img src="./logos/aws.png" data-domain="aws.amazon.com" alt="" /><b>AWS</b></span>
+                  <span><img src="./logos/cisco-duo.png" data-domain="duo.com" alt="" /><b>Cisco Duo</b></span>
+                  <span><img src="./logos/crowdstrike.png" data-domain="crowdstrike.com" alt="" /><b>CrowdStrike</b></span>
+                  <span><img src="./logos/snowflake.png" data-domain="snowflake.com" alt="" /><b>Snowflake</b></span>
+                  <span><img src="./logos/epic.png" data-domain="epic.com" alt="" /><b>Epic</b></span>
+                  <span><img src="./logos/google-cloud.png" data-domain="cloud.google.com" alt="" /><b>Google Cloud</b></span>
+                  <span><img src="./logos/oracle-health.png" data-domain="oracle.com" alt="" /><b>Oracle Health</b></span>
+                  <span><img src="./logos/vercel.png" data-domain="vercel.com" alt="" /><b>Vercel</b></span>
+                </div>
+                <div class="brand-set" aria-hidden="true">
+                  <span><img src="./logos/servicenow.png" data-domain="servicenow.com" alt="" /><b>ServiceNow</b></span>
+                  <span><img src="./logos/aws.png" data-domain="aws.amazon.com" alt="" /><b>AWS</b></span>
+                  <span><img src="./logos/cisco-duo.png" data-domain="duo.com" alt="" /><b>Cisco Duo</b></span>
+                  <span><img src="./logos/crowdstrike.png" data-domain="crowdstrike.com" alt="" /><b>CrowdStrike</b></span>
+                  <span><img src="./logos/snowflake.png" data-domain="snowflake.com" alt="" /><b>Snowflake</b></span>
+                  <span><img src="./logos/epic.png" data-domain="epic.com" alt="" /><b>Epic</b></span>
+                  <span><img src="./logos/google-cloud.png" data-domain="cloud.google.com" alt="" /><b>Google Cloud</b></span>
+                  <span><img src="./logos/oracle-health.png" data-domain="oracle.com" alt="" /><b>Oracle Health</b></span>
+                  <span><img src="./logos/vercel.png" data-domain="vercel.com" alt="" /><b>Vercel</b></span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
