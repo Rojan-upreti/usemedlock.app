@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="The Medlock page you are looking for could not be found." />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#ffeee6" />
+    <title>Page Not Found | Medlock</title>
+    <link rel="icon" type="image/png" href="/medlock.png" />
+    <link rel="apple-touch-icon" href="/medlock.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/pages.css" />
+    <style>
+      .not-found { min-height: 100vh; display: grid; align-items: center; }
+      .not-found-shell { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 360px); gap: clamp(38px, 10vw, 150px); align-items: center; padding: clamp(150px, 20vh, 230px) 0 90px; }
+      .not-found-copy { max-width: 760px; }
+      .not-found h1 { max-width: 720px; margin: 0; font-size: clamp(52px, 9vw, 132px); line-height: .88; letter-spacing: -.1em; }
+      .not-found h1 em { color: var(--blue); font-style: normal; }
+      .not-found-lede { max-width: 570px; margin: 34px 0 0; color: #505762; font-size: clamp(15px, 1.5vw, 19px); line-height: 1.7; }
+      .not-found-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
+      .not-found-button { display: inline-block; padding: 14px 18px; border: 2px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); color: var(--ink); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; transition: transform 100ms ease, box-shadow 100ms ease; }
+      .not-found-button:hover, .not-found-button:focus-visible { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+      .not-found-button.primary { background: var(--orange); }
+      .not-found-button.secondary { background: transparent; }
+      .not-found-art { position: relative; display: grid; min-height: 340px; place-items: center; border: 2px solid var(--ink); background: var(--blue); box-shadow: 9px 9px 0 var(--orange); overflow: hidden; }
+      .not-found-art::before { position: absolute; inset: 0; background-image: linear-gradient(90deg, #ffffff24 1px, transparent 1px), linear-gradient(#ffffff24 1px, transparent 1px); background-size: 24px 24px; content: ""; }
+      .not-found-art img { position: relative; z-index: 1; width: 68%; filter: drop-shadow(10px 10px 0 rgba(20, 25, 80, .3)); }
+      .not-found-code { position: absolute; right: 18px; bottom: 14px; z-index: 2; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+      @media (max-width: 760px) { .not-found-shell { grid-template-columns: 1fr; padding-top: 140px; } .not-found-art { min-height: 250px; max-width: 420px; } }
+    </style>
+  </head>
+  <body class="content-page">
+    <header class="site-header nav-ready">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="Medlock home"><img class="brand-mascot" src="/medlock.png" alt="" /><span>Medlock</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span class="menu-label">Menu</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span></button>
+        <div class="nav-menu" id="primary-menu">
+          <a href="/">Home</a><a href="/about/">About</a><a href="/our-solution/">Our Solution</a><a href="/team/">Team</a><a class="nav-cta" href="mailto:hello@usemedlock.com">Get Connected</a>
+        </div>
+      </nav>
+    </header>
+    <main class="not-found">
+      <div class="page-shell not-found-shell">
+        <section class="not-found-copy" aria-labelledby="not-found-title">
+          <p class="eyebrow">Signal lost</p>
+          <h1 id="not-found-title">This page is <em>out of scope.</em></h1>
+          <p class="not-found-lede">The URL you followed does not connect to a live Medlock page. Let’s get you back to the systems that do.</p>
+          <div class="not-found-actions"><a class="not-found-button primary" href="/">Return home →</a><a class="not-found-button secondary" href="/our-solution/">Explore our solution</a></div>
+        </section>
+        <div class="not-found-art" aria-hidden="true"><img src="/medlock.png" alt="" /><span class="not-found-code">ERROR 404</span></div>
+      </div>
+    </main>
+    <script src="/nav.js"></script>
+  </body>
+</html>
